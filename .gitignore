@@ -6,6 +6,10 @@
 build/
 DerivedData/
 
+
+#IJKMediaFramework
+IJKMediaFramework/
+
 ## Various settings
 *.pbxuser
 !default.pbxuser
