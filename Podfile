@@ -9,5 +9,7 @@ target 'TVPlayer' do
   pod  'SDWebImage', '~>3.7.4'
   pod  'MJExtension', '~> 3.0.13'
   # Pods for TVPlayer
+  pod 'LFLiveKit', '~> 2.3'  #推送流
+  pod 'BarrageRenderer', '~> 1.9.0' #弹幕
 
 end

@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"映客直播 👠";
+    self.title = @"❤️ 👠 ❤️";
     PlayerViewModel *viewModel = [[PlayerViewModel alloc] init];
     [[viewModel getPlayerList] subscribeNext:^(NSArray *x) {
         self.datasource = [NSMutableArray arrayWithArray:x];
@@ -31,6 +31,10 @@
     }error:^(NSError *error) {
         NSLog(@"error = %@",error);
     }];
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 #pragma mark - UITableView datasource and delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

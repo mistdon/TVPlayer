@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wen-Kd-7wW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2020" y="117"/>
+            <point key="canvasLocation" x="1993" y="439"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v7N-JR-h4e">
@@ -55,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="187"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dg1-u1-E1u" id="Ern-MI-g1Y">
-                                    <frame key="frameInset" width="375" height="186"/>
+                                    <frame key="frameInset" width="375" height="187"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TXw-B7-cFw"/>
@@ -86,11 +86,35 @@
                             <outlet property="delegate" destination="epf-1I-EdK" id="LM5-jc-uW4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="go3-Ri-KRB"/>
+                    <navigationItem key="navigationItem" id="go3-Ri-KRB">
+                        <barButtonItem key="rightBarButtonItem" title="我要直播" id="CjH-DQ-jB9">
+                            <connections>
+                                <segue destination="COt-S5-DTp" kind="show" id="uBR-cI-sjB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnw-Jn-wNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1149.5999999999999" y="100.29985007496252"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="jlz-M1-FPm">
+            <objects>
+                <viewController id="COt-S5-DTp" customClass="CameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YYg-8N-UgX"/>
+                        <viewControllerLayoutGuide type="bottom" id="K5F-SU-wWs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iW0-pz-9fS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tuy-NB-are" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1993" y="-206"/>
         </scene>
     </scenes>
 </document>

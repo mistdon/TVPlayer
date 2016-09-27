@@ -30,7 +30,7 @@
     
     UIButton *btn =[[UIButton alloc] init];
     [btn setTitle:@"Back" forState:UIControlStateNormal];
-    [btn setTintColor:[UIColor blueColor]];
+    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     [btn setFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 40 - 5, self.view.bounds.size.height - 40 - 5, 40, 40)];
     [self.view addSubview:btn];
